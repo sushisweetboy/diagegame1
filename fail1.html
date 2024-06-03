@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+
+    <style>
+        body{
+             background-color: black;
+             justify-content: center;
+        }
+        h1{
+            color: red;
+            font-size: 5em;
+          text-align: center;
+          text-shadow: 0 0 10px  red;
+        }
+        h4{
+         
+            text-align: center;
+            font-size: 2em;
+            -webkit-text-stroke: 2px red;
+        }
+        span{
+            color: red;
+        }
+        .container{
+    position:relative;
+    width:100%;
+    height: 100vh;
+    overflow:hidden;
+    justify-content: center;
+}
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: red;
+    margin:0 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px red, /*กำหนดการเรืองเเสงของ element */
+    0 0 50px red, 0 0 100px red; 
+    animation: animate 15s linear infinite;
+    animation-duration:calc(120s/var(--i));
+
+}
+
+@keyframes animate{
+    0%{
+        transform:translateY(100vh) scale(0);
+    }
+    100%{
+        transform:translateY(-10vh) scale(1);
+    }
+
+
+
+
+}
+
+a {
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    align-items: center;
+    top: 280px;
+    transition: 0.5s;
+    z-index: 1;
+    left: 30%;
+     
+}
+
+a:hover {
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background:transparent;
+    z-index: -1;
+}
+
+a span {
+    position: relative;
+    z-index: 2;
+}
+
+a i {
+    position: absolute;
+    inset: 0;
+    display: block;
+    z-index: 0;
+}
+
+a i::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 100%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #27282c;
+    border: 2px solid var(--clr);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+a:hover i::before {
+    left: 0%;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: 40px 39px var(--clr);
+}
+
+a i::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 0;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #27282c;
+    border: 2px solid var(--clr);
+    transition: 0.5s;
+    z-index: 2;
+}
+
+a:hover i::after {
+    left: 100%;
+    transform: translateX(-50%) rotate(-45deg);
+    box-shadow: 40px 39px var(--clr);
+}
+span{
+    color: #65ff00;
+}
+@media(min-width:500px) and (max-width:1200px){
+    a{
+        left:40%;
+    }
+   
+}
+    </style>
+</head>
+<body>
+          
+
+          <div class="container">
+            <span style="--i:12"></span>
+               <span style="--i:67"></span>
+               <span style="--i:11"></span>
+               <span style="--i:89"></span> 
+               <span style="--i:11"></span>
+               <span style="--i:19"></span>
+               <span style="--i:21"></span>
+            <h1>FAIL
+
+             <h4>                ขอเเสดงความเสียใจด้วยคุณไม่ผ่านเกมส์แรก เนื่องจากตอบคำถามไม่ถูกหมดทุกข้อ</h4>
+             
+           
+                <a href="#" style="--clr:#65ff00"><span onclick="backtolevel1();";>เริ่มใหม่</span><i></i></a>
+           
+              
+            
+      
+                
+            <div class="bubbles">
+                <span style="--i:13"></span>
+               <span style="--i:78"></span>
+               <span style="--i:89"></span>
+               <span style="--i:12"></span>
+               <span style="--i:67"></span>
+               <span style="--i:11"></span>
+               <span style="--i:89"></span> 
+               <span style="--i:11"></span>
+               <span style="--i:19"></span>
+               <span style="--i:21"></span>
+               
+               
+            </div>
+        </div>
+</body>
+<script src="allfunction.js">
+
+</script>
+</html>

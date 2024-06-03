@@ -1,0 +1,169 @@
+
+h1{
+    font-size: 4em;
+    text-align: center;
+   
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 5px  0 7px red
+    ;
+}
+body{
+    background-color: black;
+
+}
+span{
+    color: red;
+}
+.container{
+position:relative;
+width:100%;
+height: 100vh;
+overflow:hidden;
+justify-content: center;
+}
+.bubbles{
+position: relative;
+display: flex;
+}
+.bubbles span{
+position: relative;
+width: 30px;
+height: 30px;
+background: red;
+margin:0 10px;
+border-radius: 50%;
+box-shadow: 0 0 0 5px red, /*กำหนดการเรืองเเสงของ element */
+0 0 50px red, 0 0 100px red; 
+animation: animate 15s linear infinite;
+animation-duration:calc(120s/var(--i));
+
+}
+
+@keyframes animate{
+0%{
+transform:translateY(100vh) scale(0);
+}
+100%{
+transform:translateY(-10vh) scale(1);
+}
+
+
+
+
+}
+a {
+position: relative;
+background: #444;
+color: #fff;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 1.5em;
+letter-spacing: 0.1em;
+font-weight: 400;
+padding: 10px 20px;
+align-items: center;
+top: 230px;
+transition: 0.5s;
+z-index: 1;
+align-items: center;
+display: inline;
+
+}
+
+a:hover {
+letter-spacing: 0.25em;
+background: var(--clr);
+color: var(--clr);
+box-shadow: 0 0 35px var(--clr);
+}
+
+a::before {
+content: '';
+position: absolute;
+inset: 2px;
+background:transparent;
+z-index: -1;
+}
+
+a span {
+position: relative;
+z-index: 2;
+}
+
+a i {
+position: absolute;
+inset: 0;
+display: block;
+z-index: 0;
+}
+
+a i::before {
+content: '';
+position: absolute;
+top: -6px;
+left: 100%;
+transform: translateX(-50%);
+width: 10px;
+height: 10px;
+background: #27282c;
+border: 2px solid var(--clr);
+transition: 0.5s;
+z-index: -1;
+}
+
+a:hover i::before {
+left: 0%;
+transform: translateX(-50%) rotate(45deg);
+box-shadow: 40px 39px var(--clr);
+}
+
+a i::after {
+content: '';
+position: absolute;
+top: -6px;
+left: 0;
+transform: translateX(-50%);
+width: 10px;
+height: 10px;
+background: #27282c;
+border: 2px solid var(--clr);
+transition: 0.5s;
+z-index: 2;
+}
+
+a:hover i::after {
+left: 100%;
+transform: translateX(-50%) rotate(-45deg);
+box-shadow: 40px 39px var(--clr);
+}
+span{
+color: #65ff00;
+}
+p{
+    font-size: 2.5em;
+}
+@media(min-width:500px) and (max-width:1200px){
+a{
+left:40%;
+}
+
+}
+.textholder{
+    
+    justify-content: center;
+
+     width: 100vw;
+     height: 30vh;
+     
+}
+p{
+    color: #fff;
+    text-align: center;
+}
+@media(min-width:320px) and (max-width:500px){
+    a{
+        margin-left: 30%;
+    }
+}
+
