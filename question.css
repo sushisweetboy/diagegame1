@@ -84,3 +84,34 @@ h4{
 .option4{
     box-shadow: 0 1px 5px 5px orange;
 }
+
+.correctanswer{
+    margin-right: 5%;
+    width: 30vw;
+
+    box-shadow: 0 5px 10px 10px lime;
+    height: 10vh
+
+    ;
+    justify-content: center;
+    border-radius: 20%;
+    font-weight: 700;
+ 
+    background: transparent;
+   
+}
+.correctword{
+    text-align: center;
+     font-weight: 400%;
+     font-size: 1.3em;
+     display: inline;
+     color: lime;
+     text-shadow: 0 0  10px lime;
+     font-family: "Noto Sans Thai", sans-serif;
+}
+.wronganswer{
+    color: red;
+    font-size: 2em;
+    text-shadow: 0 0 20px;
+    box-shadow: 0 5px 5px 5px;
+}
