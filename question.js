@@ -444,6 +444,52 @@ function result(){
      } 
 }
 
-function showfailscore(){
-    
+function correctanswer(event){
+             
+             if(event=='q01'||event=='q02'||event=='q03'){
+                
+                 let o1=document.querySelector('.option--1');
+                 let correctans=document.createElement('div');
+                 correctans.innerHTML='  <button class="correctanswer" id="q04" onclick="rightanswer1();"><p class="correctword">อ๊อฟ</p></button>';
+                 o1.appendChild(correctans);
+             } else  if
+             (event=='q12'||event=='q13'||event=='q14'){
+                
+                document.querySelector('.option--2').insertAdjacentHTML('beforeend', '<div><button class="correctanswer" id="q11><p class="correctword">วิทยาลัย ดุริยางค์คศิลป์ มหิดล</p></button></div>');
+
+             }
+
+             else  if
+             (event=='q21'||event=='q22'||event=='q23'){
+                
+                document.querySelector('.option--3').insertAdjacentHTML('beforeend', '<div> <button class="correctanswer" id="q24" ><p class="correctword">จูบกันสักครั้ง</p"></button></div>');
+                  
+
+             }  else  if
+             (event=='q41'||event=='q42'||event=='q44'){
+                
+                document.querySelector('.option--4').insertAdjacentHTML('beforeend', '<div> <button class="correctanswer" id="q4"><p class="correctword">คิดถึง</p></button> </div>');
+                  
+                 
+
+             }else if(event=='q51'||event=='q53'||event=='q54'){
+                document.querySelector('.option--5').insertAdjacentHTML('beforeend', '<div>  <button class="correctanswer" id="q52" ><p class="correctword">youth expo</p> </button></div>');
+                  
+             }else if(event=='q61'||event=='q63'||event=='q64'){
+                document.querySelector('.option--6').insertAdjacentHTML('beforeend', '<div>  <button class="correctanswer" id="q62" ><p class="correctword">2020</p> </button></div>');
+                  
+             }else if(event=='q71'||event=='q72'||event=='q73'){
+                document.querySelector('.option--7').insertAdjacentHTML('beforeend', '<div>   <button class="correctanswer" id="q74" ><p class="correctword">ชาดำเย็น</p></button></div>');
+        
+}else if(event=='q81'||event=='q82'||event=='q83'){
+    document.querySelector('.option--8').insertAdjacentHTML('beforeend', '<div>   <button class="correctanswer" id="q82" ><p class="correctword">autta</p> </button></div>');
+
+}         else if(event=='q91'||event=='q92'||event=='q94'){
+    document.querySelector('.option--9').insertAdjacentHTML('beforeend', '<div>   <button class="correctanswer" id="q93" ><p class="correctword">different age</p> </button></div>');
+
+}              else if(event=='q101'||event=='q102'||event=='q103'){
+    document.querySelector('.option--10').insertAdjacentHTML('beforeend', '<div>   <button class="correctanswer" id="q104" ><p class="correctword">วงดนตรีอิสระ</p> </button></div>');
+
 }
+}
+    
