@@ -3,7 +3,8 @@ let score=0;
 function wronganswer1 (){
     let option1=document.querySelector(".option--1")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="WRONG";
+    a.classList.add('wronganswer');
     option1.appendChild(a);
 
     let qo1=document.querySelector("#q01");
@@ -22,7 +23,7 @@ function wronganswer1 (){
 function rightanswer1(){
     let option=document.querySelector(".option")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="CORRECT";
     option.appendChild(a);
 
     let qo1=document.querySelector("#q01");
@@ -44,7 +45,8 @@ function rightanswer1(){
 function wronganswer2 (){
     let option2=document.querySelector(".option--2")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="wrong";
+    a.classList.add('wronganswer');
     option2.appendChild(a);
 
     let q11=document.querySelector("#q11");
@@ -64,7 +66,7 @@ function wronganswer2 (){
 function rightanswer2 (){
     let option2=document.querySelector(".option--2")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="CORRECT";
     option2.appendChild(a);
 
     let q11=document.querySelector("#q11");
@@ -86,7 +88,8 @@ function rightanswer2 (){
 function wronganswer3 (){
     let option3=document.querySelector(".option--3")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="WRONG";
+    a.classList.add('wronganswer');
     option3.appendChild(a);
 
     let q21=document.querySelector("#q21");
@@ -106,7 +109,7 @@ function wronganswer3 (){
 function rightanswer3 (){
     let option3=document.querySelector(".option--3")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="CORRECT";
     option3.appendChild(a);
 
     let q11=document.querySelector("#q21");
@@ -128,7 +131,8 @@ function rightanswer3 (){
 function wronganswer4 (){
     let option4=document.querySelector(".option--4")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="WRONG";
+    a.classList.add('wronganswer');
     option4.appendChild(a);
 
     let q11=document.querySelector("#q41");
@@ -148,7 +152,7 @@ function wronganswer4 (){
 function rightanswer4 (){
     let option4=document.querySelector(".option--4")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="CORRECT";
     option4.appendChild(a);
 
     let q11=document.querySelector("#q41");
@@ -171,7 +175,8 @@ function rightanswer4 (){
 function wronganswer5 (){
     let option5=document.querySelector(".option--5")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="WRONG";
+    a.classList.add('wronganswer');
     option5.appendChild(a);
 
     let q11=document.querySelector("#q51");
@@ -191,7 +196,7 @@ function wronganswer5 (){
 function rightanswer5 (){
     let option5=document.querySelector(".option--5")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="CORRECT";
     option5.appendChild(a);
 
     let q11=document.querySelector("#q51");
@@ -214,7 +219,9 @@ function rightanswer5 (){
 function wronganswer6 (){
     let option6=document.querySelector(".option--6")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+
+    a.innerHTML="WRONG";
+    a.classList.add('wronganswer');
     option6.appendChild(a);
 
     let q11=document.querySelector("#q61");
@@ -234,7 +241,7 @@ function wronganswer6 (){
 function rightanswer6 (){
     let option6=document.querySelector(".option--6")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="CORRECT";
     option6.appendChild(a);
 
     let q11=document.querySelector("#q61");
@@ -258,7 +265,8 @@ function rightanswer6 (){
 function wronganswer7 (){
     let option7=document.querySelector(".option--7")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="WRONG";
+    a.classList.add('wronganswer');
     option7.appendChild(a);
 
     let q11=document.querySelector("#q71");
@@ -278,7 +286,7 @@ function wronganswer7 (){
 function rightanswer7 (){
     let option7=document.querySelector(".option--7")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="CORRECT";
     option7.appendChild(a);
 
     let q11=document.querySelector("#q71");
@@ -301,7 +309,8 @@ function rightanswer7 (){
 function wronganswer8 (){
     let option8=document.querySelector(".option--8")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="WRONG";
+    a.classList.add('wronganswer');
     option8.appendChild(a);
 
     let q11=document.querySelector("#q81");
@@ -321,7 +330,7 @@ function wronganswer8 (){
 function rightanswer8 (){
     let option8=document.querySelector(".option--8")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="CORRECT";
     option8.appendChild(a);
 
     let q11=document.querySelector("#q81");
@@ -345,7 +354,8 @@ function rightanswer8 (){
 function wronganswer9(){
     let option9=document.querySelector(".option--9")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="WRONG";
+    a.classList.add('wronganswer');
     option9.appendChild(a);
 
     let q11=document.querySelector("#q91");
@@ -365,7 +375,7 @@ function wronganswer9(){
 function rightanswer9 (){
     let option9=document.querySelector(".option--9")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="CORRECT";
     option9.appendChild(a);
 
     let q11=document.querySelector("#q91");
@@ -388,17 +398,18 @@ function rightanswer9 (){
 function wronganswer10(){
     let option10=document.querySelector(".option--10")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="WRONG";
+    a.classList.add('wronganswer');
     option10.appendChild(a);
 
     let q11=document.querySelector("#q101");
     let q12=document.querySelector("#q102");
     let q13=document.querySelector("#q103");
     let q14=document.querySelector("#q104");
-    option9.removeChild(q11);
-    option9.removeChild(q12);
-    option9.removeChild(q13);
-    option9.removeChild(q14);
+    option10.removeChild(q11);
+    option10.removeChild(q12);
+    option10.removeChild(q13);
+    option10.removeChild(q14);
     answer++;
     console.log("score",  score);
     console.log("answer",answer);
@@ -408,7 +419,7 @@ function wronganswer10(){
 function rightanswer10 (){
     let option10=document.querySelector(".option--10")
     let a=document.createElement("h4");
-    a.innerHTML="ANSWERED";
+    a.innerHTML="CORRECT";
     option10.appendChild(a);
 
     let q11=document.querySelector("#q101");
@@ -443,6 +454,35 @@ function result(){
          }
      } 
 }
+   
+    
+  
+   
+
+    
+  
+  
+
+    
+
+   
+ 
+    
+    
+
+   
+
+    
+    
+
+    
+    
+  
+    
+   
+    
+    
+   
 
 function correctanswer(event){
              
